@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 225 16% 12%;
+    --foreground: 210 20% 93%;
+
+    --card: 225 14% 15%;
+    --card-foreground: 210 20% 93%;
+
+    --popover: 225 14% 15%;
+    --popover-foreground: 210 20% 93%;
+
+    --primary: 174 62% 47%;
+    --primary-foreground: 225 16% 12%;
+
+    --secondary: 225 12% 20%;
+    --secondary-foreground: 210 15% 80%;
+
+    --muted: 225 10% 18%;
+    --muted-foreground: 215 10% 50%;
+
+    --accent: 174 62% 47%;
+    --accent-foreground: 225 16% 12%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 225 12% 22%;
+    --input: 225 12% 22%;
+    --ring: 174 62% 47%;
+
+    --radius: 0.75rem;
+
+    --font-display: 'DM Serif Display', serif;
+    --font-body: 'DM Sans', sans-serif;
+
+    --sidebar-background: 225 14% 10%;
+    --sidebar-foreground: 210 20% 93%;
+    --sidebar-primary: 174 62% 47%;
+    --sidebar-primary-foreground: 225 16% 12%;
+    --sidebar-accent: 225 12% 20%;
+    --sidebar-accent-foreground: 210 15% 80%;
+    --sidebar-border: 225 12% 22%;
+    --sidebar-ring: 174 62% 47%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .glass-card {
+    @apply bg-card/60 backdrop-blur-md border border-border/50 rounded-xl;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-teal-300 to-primary;
+  }
+}
+
+@layer utilities {
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_hsl(38_92%_55%_/_0.15)];
+  }
+}
