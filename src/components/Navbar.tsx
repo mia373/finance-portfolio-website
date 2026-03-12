@@ -5,8 +5,8 @@ import { motion, AnimatePresence, useScroll } from "framer-motion";
 const navItems = [
   { label: "About", href: "#about" },
   { label: "Projects", href: "#projects" },
-  { label: "Expertise", href: "#expertise" },
-  { label: "Experience", href: "#experience" },
+  // { label: "Expertise", href: "#expertise" },
+  // { label: "Experience", href: "#experience" },
 ];
 
 const Navbar = () => {

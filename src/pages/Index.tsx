@@ -10,8 +10,8 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <ProjectsSection />
-      <ExpertiseSection />
-      <ExperienceSection />
+      {/* <ExpertiseSection /> */}
+      {/* <ExperienceSection /> */}
       <footer className="py-12 border-t border-border">
         <div className="section-container text-center text-muted-foreground text-sm">
           <p>© {new Date().getFullYear()} — Built with passion & pixels</p>
