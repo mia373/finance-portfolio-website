@@ -1,6 +1,12 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 
+import search from "@/assets/search.png";
+import glb from "@/assets/glb.png";
+import project2 from "@/assets/project2.jpg";
+import hometasker from "@/assets/hometasker.png";
+import aicoach from "@/assets/aicoach.png";
+
 interface Project {
   title: string;
   description: string;
@@ -13,33 +19,48 @@ interface Project {
 const projects: Project[] = [
   {
     title: "ASC 606 Contract Reviewer",
-    description: "A full-stack marketplace with real-time inventory, Stripe payments, and admin dashboard.",
-    tech: ["React", "Node.js", "PostgreSQL", "Stripe"],
-    github: "https://github.com",
-    live: "https://example.com",
+    description: "A full-stack revenue contract analyzer.",
+    tech: ["Vite", "TypeScript", "React", "Tailwind CSS"],
+    github: "https://github.com/mia373/revenue-contract-analyzer",
+    //live: "https://example.com",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
   },
   {
-    title: "Network Routing Protocol Implementation",
-    description: "An intelligent conversational AI with context memory and multi-model support.",
-    tech: ["TypeScript", "OpenAI", "Redis", "Docker"],
-    github: "https://github.com",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
+    title: "Philadelphia Data Interface",
+    description: "A Java REST API and React dashboard for visualizing Philadelphia's COVID, property, and population data by ZIP code.",
+    tech: ["Java", "Javalin", "React", "TypeScript", "Recharts/React Leaflet", "JUnit 5"],
+    github: "https://github.com/mia373/philadelphia-data-interface",
+    //ive: "https://example.com",
+    image: project2,
   },
   {
-    title: "Penn NLP Lab (Multimodal Large Language Models QA)",
-    description: "Beautiful real-time weather visualization with 7-day forecasts and interactive maps.",
+    title: "Distributed Search Engine",
+    description: "A search engine in C++ using a custom Chord Distributed Hash Table (DHT) to route queries across dynamic networks.",
+    tech: ["C++", "Distributed Systems", "Network Routing", "OpenSSL"],
+    github: "https://github.com/mia373/distributed-search-engine",
+    image: search,
+  },
+  {
+    title: "Penn NLP Lab Assistance",
+    description: "Collaborated with PhD researchers at the University of Pennsylvania to curate a benchmark dataset for evaluating Multimodal Large Language Models (MLLMs) on 3D scene.",
     tech: ["JSON", "GLB", "Babylon.js", "MLLMs"],
     github: "https://github.com/mia373/penn-mllm-benchmark",
-    image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop",
+    image: glb,
   },
   {
-    title: "Home Task Mobile AI Assistant",
-    description: "Kanban-style project manager with drag-and-drop, real-time collaboration, and analytics.",
-    tech: ["Next.js", "Supabase", "Framer Motion"],
-    github: "https://github.com",
-    live: "https://example.com",
-    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
+    title: "AI Career Coach",
+    description: "A multi-agent AI coach system with 4 specialized agents using LangGraph.",
+    tech: ["Python", "LangGraph", "LangChain", "Google Gemini LLM", "Serper API"],
+    github: "https://github.com/mia373/ai-career-coach",
+    image: aicoach,
+  },
+  {
+    title: "AI-Assisted Home Tasker",
+    description: "A gamified household task manager - earn points for chores, compete with your housemates.",
+    tech: ["React Native", "Supabase", "Gemini API", "Expo", "Claude Code"],
+    github: "https://github.com/mia373/tidy-up",
+    //live: "https://example.com",
+    image: hometasker,
   },
 ];
 

@@ -30,8 +30,8 @@ const HeroSection = () => {
             Excellence
           </h1>
           <p className="font-body text-white/70 text-lg max-w-lg mb-8 leading-relaxed">
-            I help organisations modernise their finance functions — from ERP implementations 
-            and process optimisation to building high-performing teams that deliver lasting change.
+            I bridge deep finance and accounting experience with applied AI to help leaders 
+            automate workflows and drive smarter, data-backed business decisions.
           </p>
 
           <div className="flex items-center gap-4 mb-16">

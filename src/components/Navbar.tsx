@@ -47,7 +47,7 @@ const Navbar = () => {
 
       <div className="section-container flex items-center justify-between h-16">
         <a href="#about" className="font-display text-xl text-primary">
-          Portfolio
+          Mia Zuo's Portfolio
         </a>
 
         {/* Desktop */}
