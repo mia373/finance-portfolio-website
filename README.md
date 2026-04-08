@@ -1,6 +1,6 @@
 # Finance Portfolio Website
 
-A personal portfolio website for a finance transformation professional.
+My personal finance transformation portfolio website.
 
 ## Tech Stack
 
